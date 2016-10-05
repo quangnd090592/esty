@@ -9,18 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var RecentlyViewedComponent = (function () {
-    function RecentlyViewedComponent() {
+var http_1 = require('@angular/http');
+require('rxjs/add/operator/toPromise');
+var HomeService = (function () {
+    function HomeService(http) {
+        this.http = http;
     }
-    RecentlyViewedComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'recently-viewed',
-            templateUrl: '../view/home/recently-viewed.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], RecentlyViewedComponent);
-    return RecentlyViewedComponent;
+    HomeService.prototype.getRecentlyViewed = function () {
+        return Promise.resolve(RECENTLY_REVIEWED);
+    };
+    HomeService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], HomeService);
+    return HomeService;
 }());
-exports.RecentlyViewedComponent = RecentlyViewedComponent;
-//# sourceMappingURL=recently-viewed.component.js.map
+exports.HomeService = HomeService;
+//# sourceMappingURL=home.service.js.map
