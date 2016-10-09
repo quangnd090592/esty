@@ -14,6 +14,7 @@ var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var app_routing_1 = require('./app.routing');
+var home_service_1 = require('./home/home.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,9 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
             ],
-            providers: [],
+            providers: [
+                home_service_1.HomeService
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

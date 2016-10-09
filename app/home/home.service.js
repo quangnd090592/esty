@@ -9,18 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
 require('rxjs/add/operator/toPromise');
+var mock_data_1 = require('../mock-data');
 var HomeService = (function () {
-    function HomeService(http) {
-        this.http = http;
+    function HomeService() {
     }
+    // constructor(private http: Http) {}
+    // getQuang() : {}[]{
+    // 	return RECENTLY_REVIEWED;
+    // }
     HomeService.prototype.getRecentlyViewed = function () {
-        return Promise.resolve(RECENTLY_REVIEWED);
+        console.log(mock_data_1.RECENTLY_REVIEWED, 'RECENTLY_REVIEWED');
+        return Promise.resolve(mock_data_1.RECENTLY_REVIEWED);
     };
     HomeService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
+        __metadata('design:paramtypes', [])
     ], HomeService);
     return HomeService;
 }());

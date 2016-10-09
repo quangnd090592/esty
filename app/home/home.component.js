@@ -9,16 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var home_service_1 = require('./home.service');
+// import { Router } from '@angular/router';
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(
+        // private router : Router,
+        homeService) {
+        this.homeService = homeService;
     }
+    ;
+    HomeComponent.prototype.getRecentlyViewed = function () {
+        var _this = this;
+        this.homeService.getRecentlyViewed().then(function (recently) { return _this.recently = recently; });
+        // this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
+    };
+    ;
     HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'home',
             templateUrl: '../view/home/home.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [home_service_1.HomeService])
     ], HomeComponent);
     return HomeComponent;
 }());
