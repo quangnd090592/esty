@@ -1,5 +1,11 @@
 <div>
-    <h2 class="home-content-title">Recently viewed &amp; more {{recently}}</h2>
+    <div *ngFor="let test of recently" class="col-1-4">
+      <div class="module hero">
+        <h4>{{test.name}}</h4>
+      </div>
+    </div>
+
+    <h2 class="home-content-title">Recently viewed &amp; more</h2>
     <div class="clearfix">
         <div class="col-sm-3">
             <div class="card">

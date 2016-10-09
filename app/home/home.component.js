@@ -21,13 +21,16 @@ var HomeComponent = (function () {
     HomeComponent.prototype.getRecentlyViewed = function () {
         var _this = this;
         this.homeService.getRecentlyViewed().then(function (recently) { return _this.recently = recently; });
-        // this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
     };
     ;
+    HomeComponent.prototype.ngOnInit = function () {
+        this.getRecentlyViewed();
+    };
     HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'home',
+            // template : 'ky qua {{test}}'
             templateUrl: '../view/home/home.component.html'
         }), 
         __metadata('design:paramtypes', [home_service_1.HomeService])
