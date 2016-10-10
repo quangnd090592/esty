@@ -30,7 +30,6 @@ var HomeComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'home',
-            // template : 'ky qua {{test}}'
             templateUrl: '../view/home/home.component.html'
         }), 
         __metadata('design:paramtypes', [home_service_1.HomeService])

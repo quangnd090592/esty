@@ -5,7 +5,6 @@ import { HomeService } 		from './home.service';
 @Component ({
 	moduleId: module.id,
 	selector : 'home',
-	// template : 'ky qua {{test}}'
 	templateUrl : '../view/home/home.component.html'
 })
 
