@@ -13,13 +13,37 @@ export class HomeComponent {
 		// private router : Router,
 		private homeService: HomeService
 	) { };
-	recently : {}[];
+	recentlyViewed : {}[];
+	category : {}[];
+	recentlyUploaded : {}[];
+	shopOnlyShop : {}[];
+	keepYouSafe : {}[];
 
 	getRecentlyViewed(): void {
-	    this.homeService.getRecentlyViewed().then(recently => this.recently = recently);
+	    this.homeService.getRecentlyViewed().then(recentlyViewed => this.recentlyViewed = recentlyViewed);
+	};
+
+	getCategory(): void {
+	    this.homeService.getCategory().then(category => this.category = category);
+	};
+
+	getRecentlyUploaded(): void {
+	    this.homeService.getRecentlyUploaded().then(recentlyUploaded => this.recentlyUploaded = recentlyUploaded);
+	};
+
+	getShopOnlyShop(): void {
+	    this.homeService.getShopOnlyShop().then(shopOnlyShop => this.shopOnlyShop = shopOnlyShop);
+	};
+
+	getKeepYouSafe(): void {
+	    this.homeService.getKeepYouSafe().then(keepYouSafe => this.keepYouSafe = keepYouSafe);
 	};
 
 	ngOnInit(): void {
 		this.getRecentlyViewed();
+		this.getCategory();
+		this.getRecentlyUploaded();
+		this.getShopOnlyShop();
+		this.getKeepYouSafe();
   	}
 }

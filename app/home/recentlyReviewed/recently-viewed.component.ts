@@ -8,5 +8,5 @@ import { Component, Input}	from '@angular/core';
 
 export class RecentlyViewedComponent{
 	@Input()
-  	data: {};
+  	recentlyViewed: {};
 }

@@ -1,0 +1,12 @@
+<div class="col-sm-3" *ngFor="let item of recentlyUploaded">
+    <div class="card">
+      <img class="card-img-top img-responsive" src="{{item.img}}" alt="{{item.name}}">
+      <div class="card-block sm">
+        <p class="card-title">{{item.name}}</p>
+        <div class="clearfix">
+            <span class="card-shop-name pull-left">{{item.producer}}</span>
+            <span class="card-price pull-right">US${{item.price}}</span>
+        </div>  
+      </div>
+    </div>
+</div>

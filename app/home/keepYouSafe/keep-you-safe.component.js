@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var RecentlyViewedComponent = (function () {
-    function RecentlyViewedComponent() {
+var KeepYouSafeComponent = (function () {
+    function KeepYouSafeComponent() {
     }
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
-    ], RecentlyViewedComponent.prototype, "recentlyViewed", void 0);
-    RecentlyViewedComponent = __decorate([
+    ], KeepYouSafeComponent.prototype, "data", void 0);
+    KeepYouSafeComponent = __decorate([
         core_1.Component({
-            selector: 'recently-viewed',
-            templateUrl: './app/view/home/recently-viewed.component.html',
+            selector: 'keep-you-safe',
+            templateUrl: './app/view/home/keep-you-safe.component.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], RecentlyViewedComponent);
-    return RecentlyViewedComponent;
+    ], KeepYouSafeComponent);
+    return KeepYouSafeComponent;
 }());
-exports.RecentlyViewedComponent = RecentlyViewedComponent;
-//# sourceMappingURL=recently-viewed.component.js.map
+exports.KeepYouSafeComponent = KeepYouSafeComponent;
+//# sourceMappingURL=keep-you-safe.component.js.map

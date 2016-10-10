@@ -14,6 +14,10 @@ var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var recently_viewed_component_1 = require('./home/recentlyReviewed/recently-viewed.component');
+var category_component_1 = require('./home/category/category.component');
+var recently_uploaded_component_1 = require('./home/recentlyUploaded/recently-uploaded.component');
+var shop_only_shop_component_1 = require('./home/shopOnlyShop/shop-only-shop.component');
+var keep_you_safe_component_1 = require('./home/keepYouSafe/keep-you-safe.component');
 var app_routing_1 = require('./app.routing');
 var home_service_1 = require('./home/home.service');
 var AppModule = (function () {
@@ -30,6 +34,10 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
                 recently_viewed_component_1.RecentlyViewedComponent,
+                category_component_1.CategoryComponent,
+                recently_uploaded_component_1.RecentlyUploadedComponent,
+                shop_only_shop_component_1.ShopOnlyShopComponent,
+                keep_you_safe_component_1.KeepYouSafeComponent,
             ],
             providers: [
                 home_service_1.HomeService

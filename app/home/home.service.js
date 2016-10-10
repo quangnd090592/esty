@@ -22,6 +22,22 @@ var HomeService = (function () {
         console.log(mock_data_1.RECENTLY_REVIEWED, 'RECENTLY_REVIEWED');
         return Promise.resolve(mock_data_1.RECENTLY_REVIEWED);
     };
+    HomeService.prototype.getCategory = function () {
+        console.log(mock_data_1.CATEGORY, 'CATEGORY');
+        return Promise.resolve(mock_data_1.CATEGORY);
+    };
+    HomeService.prototype.getRecentlyUploaded = function () {
+        console.log(mock_data_1.RECENTLYUPLOADED, 'RECENTLYUPLOADED');
+        return Promise.resolve(mock_data_1.RECENTLYUPLOADED);
+    };
+    HomeService.prototype.getShopOnlyShop = function () {
+        console.log(mock_data_1.SHOPONLYSHOP, 'SHOPONLYSHOP');
+        return Promise.resolve(mock_data_1.SHOPONLYSHOP);
+    };
+    HomeService.prototype.getKeepYouSafe = function () {
+        console.log(mock_data_1.KEEPYOUSAFE, 'KEEPYOUSAFE');
+        return Promise.resolve(mock_data_1.KEEPYOUSAFE);
+    };
     HomeService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

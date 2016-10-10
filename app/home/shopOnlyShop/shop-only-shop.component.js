@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var RecentlyViewedComponent = (function () {
-    function RecentlyViewedComponent() {
+var ShopOnlyShopComponent = (function () {
+    function ShopOnlyShopComponent() {
     }
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
-    ], RecentlyViewedComponent.prototype, "recentlyViewed", void 0);
-    RecentlyViewedComponent = __decorate([
+    ], ShopOnlyShopComponent.prototype, "shopOnlyShop", void 0);
+    ShopOnlyShopComponent = __decorate([
         core_1.Component({
-            selector: 'recently-viewed',
-            templateUrl: './app/view/home/recently-viewed.component.html',
+            selector: 'shop-only-shop',
+            templateUrl: './app/view/home/shop-only-shop.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], RecentlyViewedComponent);
-    return RecentlyViewedComponent;
+    ], ShopOnlyShopComponent);
+    return ShopOnlyShopComponent;
 }());
-exports.RecentlyViewedComponent = RecentlyViewedComponent;
-//# sourceMappingURL=recently-viewed.component.js.map
+exports.ShopOnlyShopComponent = ShopOnlyShopComponent;
+//# sourceMappingURL=shop-only-shop.component.js.map

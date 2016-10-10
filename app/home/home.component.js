@@ -20,11 +20,35 @@ var HomeComponent = (function () {
     ;
     HomeComponent.prototype.getRecentlyViewed = function () {
         var _this = this;
-        this.homeService.getRecentlyViewed().then(function (recently) { return _this.recently = recently; });
+        this.homeService.getRecentlyViewed().then(function (recentlyViewed) { return _this.recentlyViewed = recentlyViewed; });
+    };
+    ;
+    HomeComponent.prototype.getCategory = function () {
+        var _this = this;
+        this.homeService.getCategory().then(function (category) { return _this.category = category; });
+    };
+    ;
+    HomeComponent.prototype.getRecentlyUploaded = function () {
+        var _this = this;
+        this.homeService.getRecentlyUploaded().then(function (recentlyUploaded) { return _this.recentlyUploaded = recentlyUploaded; });
+    };
+    ;
+    HomeComponent.prototype.getShopOnlyShop = function () {
+        var _this = this;
+        this.homeService.getShopOnlyShop().then(function (shopOnlyShop) { return _this.shopOnlyShop = shopOnlyShop; });
+    };
+    ;
+    HomeComponent.prototype.getKeepYouSafe = function () {
+        var _this = this;
+        this.homeService.getKeepYouSafe().then(function (keepYouSafe) { return _this.keepYouSafe = keepYouSafe; });
     };
     ;
     HomeComponent.prototype.ngOnInit = function () {
         this.getRecentlyViewed();
+        this.getCategory();
+        this.getRecentlyUploaded();
+        this.getShopOnlyShop();
+        this.getKeepYouSafe();
     };
     HomeComponent = __decorate([
         core_1.Component({

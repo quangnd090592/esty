@@ -1,122 +1,106 @@
-<div>
-    <h2 class="home-content-title">Recently viewed &amp; more</h2>
-    <div class="clearfix">
-        <recently-viewed [data]="recently"></recently-viewed>        
-    </div>
-</div>  
-<!-- /Recently viewed & more -->
+<!-- Container -->
+<div class="container">
+    <div>
+        <h2 class="home-content-title">Recently viewed &amp; more</h2>
+        <div class="clearfix">
+            <recently-viewed [recentlyViewed]="recentlyViewed"></recently-viewed>        
+        </div>
+    </div>  
+    <!-- /Recently viewed & more -->
 
-<!-- Shop by category -->
-<div>
-    <h2 class="home-content-title">Shop by category</h2>
+    <!-- Shop by category -->
+    <div>
+        <h2 class="home-content-title">Shop by category</h2>
+        <div class="clearfix">
+            <category [category]="category"></category>
+        </div>
+    </div>
+    <!-- /Shop by category -->
+
+    <!-- Recently Uploaded -->
+    <div>
+        <h2 class="home-content-title">Recently Uploaded</h2>
+        <div class="clearfix">
+            <recently-uploaded [recentlyUploaded]="recentlyUploaded"></recently-uploaded>
+        </div>
+    </div>            
+    <div class="text-center more mt30">
+        <a href="">See More <i class="fa fa-chevron-right"></i></a>
+    </div>   
+    <!-- /Recently Uploaded -->
+</div>
+
+<!-- Trust -->
+<div class="safebanner clearfix text-center">
+    <div class="col-sm-2">
+        <img src="images/trust1.png" />
+    </div>
+    <div class="col-sm-8">
+    <h2 class="home-banner-title">keeps you safe</h2>
+    <div class="col-sm-4">
+        <h4 class="home-sm-title white">Trust worth seller</h4>
+        <p>Whether you use a credit card, a bank transfer or Paypal, we make it our top priority to keep your payment information encrypted and secure.<a href="https://www.etsy.com/in-en/help/article/2048" class="link">Find out more</a></p>
+    </div>
+    <div class="col-sm-4">
+        <h4 class="home-sm-title white">Trust worth seller</h4>
+        <p>Whether you use a credit card, a bank transfer or Paypal, we make it our top priority to keep your payment information encrypted and secure.<a href="https://www.etsy.com/in-en/help/article/2048" class="link">Find out more</a></p>
+    </div>
+    <div class="col-sm-4">
+        <h4 class="home-sm-title white">Trust worth seller</h4>
+        <p>Whether you use a credit card, a bank transfer or Paypal, we make it our top priority to keep your payment information encrypted and secure. <a href="https://www.etsy.com/in-en/help/article/2048" class="link">Find out more</a></p></div>
+    </div>    
+    <div class="col-sm-2">
+        <img src="images/trust2.png" />
+    </div>
+</div>
+<!-- /Trust -->
+
+<!-- Shop Only shop -->
+<div class="container clearfix">
+    <h2 class="home-content-title">Shop Only shop</h2>
     <div class="clearfix">
-        <div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
+        <shop-only-shop [shopOnlyShop] = 'shopOnlyShop'></shop-only-shop>        
+    </div>
+</div>
+<!-- /Shop Only shop -->
+
+<!-- Difference Make Us -->
+<div class="clearfix">
+    <h2 class="home-content-title">#Difference Make Us</h2>
+    <div class="video-background rel">
+        <div class="video-play-btn">
         </div>
     </div>
 </div>
-<!-- /Shop by category -->
+<!-- /Difference Make Us -->
 
-<!-- Recently Uploaded -->
-<div>
-    <h2 class="home-content-title">Recently Uploaded</h2>
-    <div class="clearfix">
-        <div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <div class="card">
-              <img class="card-img-top img-responsive" src="images/img4.jpg" alt="Card image cap">
-              <div class="card-block sm">
-                <p class="card-title">Landscape photography</p>
-                <div class="clearfix">
-                    <span class="card-shop-name pull-left">plains shopwood</span>
-                    <span class="card-price pull-right">US$200</span>
-                </div>  
-              </div>
-            </div>
-        </div>
-    </div>
-</div>            
-<div class="text-center more mt30">
-    <a href="">See More <i class="fa fa-chevron-right"></i></a>
-</div>   
-<!-- /Recently Uploaded -->
+<!-- START SELLING ON EASY -->
+<div class="safebanner light rel clearfix text-center">
+    <img src="images/sell1.png" width="300" class="selleft" />
+    <div>
+    <h2 class="home-banner-title">Start Selling on Easy</h2>
+    <p>Millions of shopper cant't wait to see</p>
+    <a href="">Once a shop today</a>    
+    </div>    
+    <img src="images/sell2.png" width="300" class="selright" />
+</div>
+<!-- /START SELLING ON EASY -->
+
+<!-- Recent reviews from happy people -->
+<div class="container">
+    <h2 class="home-banner-title">keeps you safe</h2>
+    <keep-you-safe [data] = 'keepYouSafe'></keep-you-safe>    
+</div>
+<!-- /Recent reviews from happy people -->
+
+<!-- WHAT IS ETSY? -->
+<div class="safebanner rel clearfix text-center">
+    <img src="images/etsy1.png" width="340" class="etsyleft" />
+    <div>
+    <h2 class="home-banner-title">What is Etsy?</h2>
+    <p>Millions of shopper cant't wait to see</p>
+    <a href="" class="link">Once a shop today</a>    
+    </div>    
+    <img src="images/etsy2.png" width="340" class="etsyright" />
+</div>
+<!-- /WHAT IS ETSY? -->

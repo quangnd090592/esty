@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var RecentlyViewedComponent = (function () {
-    function RecentlyViewedComponent() {
+var RecentlyUploadedComponent = (function () {
+    function RecentlyUploadedComponent() {
     }
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
-    ], RecentlyViewedComponent.prototype, "recentlyViewed", void 0);
-    RecentlyViewedComponent = __decorate([
+    ], RecentlyUploadedComponent.prototype, "recentlyUploaded", void 0);
+    RecentlyUploadedComponent = __decorate([
         core_1.Component({
-            selector: 'recently-viewed',
-            templateUrl: './app/view/home/recently-viewed.component.html',
+            selector: 'recently-uploaded',
+            templateUrl: './app/view/home/recently-uploaded.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], RecentlyViewedComponent);
-    return RecentlyViewedComponent;
+    ], RecentlyUploadedComponent);
+    return RecentlyUploadedComponent;
 }());
-exports.RecentlyViewedComponent = RecentlyViewedComponent;
-//# sourceMappingURL=recently-viewed.component.js.map
+exports.RecentlyUploadedComponent = RecentlyUploadedComponent;
+//# sourceMappingURL=recently-uploaded.component.js.map

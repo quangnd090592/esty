@@ -1,0 +1,18 @@
+<div class="col-sm-4" *ngFor="let item of shopOnlyShop">
+    <div class="card">
+        <img class="card-img-top img-responsive" src="{{item.img}}" alt="{{item.name}}">
+        <div class="card-block sm">
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img class="media-object" src="{{item.img}}" width="50" height="50" alt="{{item.name}}">
+                </a>
+                <div class="media-body shopsm">
+                    <a href="">{{item.name}}</a>
+                    <div class="text-gray-lighter text-truncate">
+                        <span class="fa fa-map-marker" aria-hidden="true"></span> {{item.location}}&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

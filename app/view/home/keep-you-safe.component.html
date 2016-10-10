@@ -1,0 +1,13 @@
+<div class="col-sm-4 text-center" *ngFor="let item of data">
+    <div class="circle horizontal-center">
+        <img src="{{item.img}}" width="64" />
+    </div>
+    <div class="mt30 bg-rounded">
+        <span><strong>{{item.author}}</strong> wrote on {{item.date}}</span>
+        <p class="mt30 text-gray">
+            {{item.content}}
+        </p>
+        <img src="{{item.img}}" class="img-responsive" />
+        <span class="pd10">{{item.product}}</span>
+    </div>
+</div>
